@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer</title>
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/variables.css">
+    <link rel="stylesheet" href="/styles/components/navbar.css">
+    <link rel="stylesheet" href="/styles/components/hero.css">
+    <link rel="stylesheet" href="/styles/components/card.css">
+
+    <script type="module">
+        import {loadCards} from"/js/components/card.js"
+        loadCards(".cards-container");
+    </script>
 
 </head>
 <body>
     <!-- Header -->
     <header>
         <h1 class="navbar__title">
-            Edwar Velásquez
-            <span class="navbar__subtitle">Rico Programar</span>
+            David Suarez
+            <span class="navbar__subtitle">Rico soft</span>
         </h1>
     </header><!--Header-->
 
     <div class="navbar-container"></div>
+    <div class="hero-container"></div>
+    <div class="cards-container"></div> <!--Contenedor de las cards-->
+
     <script src="/js/components/navbar.js"></script>
-    
+    <script src="/js/components/hero.js"></script>
+    <!-- <script src="/js/components/card.js"></script> -->
     
 </body>
 </html>
