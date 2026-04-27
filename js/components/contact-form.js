@@ -1,16 +1,16 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 
-    const heroElement = document.querySelector(".hero-container")
+    const form = document.querySelector(".services__form-container")
 
-    if (!heroElement) return;
+    if (!form) return;
 
-        fetch("/views/components/hero.html")
+        fetch("/views/components/contact-form.html")
             // La respuesta la convierte a texto plano
         .then(response => response.text())
             // Insertar el contenido html del navbar en el contenedor correspondiente
         .then(data => {
-            heroElement.innerHTML = data;
+            form.innerHTML = data;
     })
-        .catch(error => console.log("Error cargando el hero", error));
-})
+        .catch(error => console.log("Error cargando el formulario", error));
+});
